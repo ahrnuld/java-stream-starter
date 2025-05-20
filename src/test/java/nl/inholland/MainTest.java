@@ -72,7 +72,7 @@ class MainTest {
         long numberOf20YearOlds = Main.assignment4(students);
         long expectedNumber = 0;
         for (Student student : students) {
-            if (student.getBirthdate().getYear() == (2023 - 20)) {
+            if (student.getBirthdate().getYear() == (LocalDate.now().getYear() - 20)) {
                 expectedNumber++;
             }
         }
